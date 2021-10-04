@@ -76,9 +76,16 @@ northernIrelandKeys = null;
 
 
 
-scotland = unitedKingdom[0]; 
-if (scotland.population > england.population && scotland.population > wales.population && scotland.population > northernIreland.population) { 
-    console.log("Biggest") 
-} else if (scotland.population < england.population && scotland.population < wales.population && scotland.population < northernIreland.population) { 
-    console.log("Smallest") 
-} else { console.log("In between") }
+// ANswer 1 
+//      scotland = unitedKingdom[0]; 
+//        if (scotland.population > england.population && scotland.population > wales.population && scotland.population > northernIreland.population) { 
+//       console.log("Biggest") 
+//        } else if (scotland.population < england.population && scotland.population < wales.population && scotland.population < northernIreland.population) { 
+//       console.log("Smallest") 
+//         } else { console.log("In between") }
+
+
+// Answr 2
+
+scotlandPopulation = unitedKingdom[0].population; englandPopulation = unitedKingdom[1].population; walesPopulation = unitedKingdom[2].population; northernIrelandPopulation = unitedKingdom[3].population; if (scotlandPopulation > englandPopulation && scotlandPopulation > walesPopulation && scotlandPopulation > northernIrelandPopulation) { console.log("Scoland has the largest Population"); } else if (scotlandPopulation < englandPopulation && scotlandPopulation < walesPopulation && scotlandPopulation < northernIrelandPopulation) { console.log("Scoland has the smallest Population"); } else { console.log("Scoland has a somewhat median population size"); }
+
