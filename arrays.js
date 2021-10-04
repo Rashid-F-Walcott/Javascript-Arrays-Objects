@@ -65,7 +65,10 @@ console.log(stations);
  * How did Leeds get on there? Better remove it.
  */
 
-// console.log(stations);
+ index = stations.indexOf("Leeds");
+    stations.splice(index, 1);
+
+console.log(stations);
 
 
 
@@ -74,7 +77,12 @@ console.log(stations);
  * We forgot about Darlington! Add it to the route between Newcastle and York.
  */
 
-// console.log(stations);
+ let start = 3;
+ let deleteCount = 0;
+ stations.splice(start, deleteCount, 'Darlington');
+
+
+console.log(stations);
 
 
 
@@ -83,12 +91,22 @@ console.log(stations);
  * Is Durham one of the stops?
  */
 
-stoppingAtDurham = null;
 
-// console.log(stoppingAtDurham);
+if (stations.includes("Durham")) {
+console.log("Durham is one of the stops") 
+} else {
+console.log("Durham is not a stop on this train") 
+}
 
 
 /**
  * Q9.
  * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
  */
+
+ if (stations.includes("Durham")) {
+    console.log("YAY Durham") 
+    } else {
+    console.log("Awww.. No Durham Today") 
+}
+
