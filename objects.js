@@ -50,6 +50,8 @@ console.log("The cat is a " + catBreed);
 
 tortoise.age = 8;
 
+// to just add the age to his existing would be       tortoise.age += 1;
+
 console.log(tortoise);
 
 
@@ -68,9 +70,15 @@ console.log("The dog has " + dogColourCount + " different colours");
  * Q5. I've just bought a 12-year-old African Grey parrot called Lucky. Create an object for her.
  */
 
-parrot = null;
+parrot =  {
+    name: "Lucky",
+    age: 12,
+    breed: "African",
+    colours: ["Grey"]
+}
 
-// console.log(parrot);
+
+console.log(parrot);
 
 
 
@@ -78,7 +86,10 @@ parrot = null;
  * Q6. Ella's favourite food is dandelion, add this information to her object
  */
 
-// console.log(tortoise);
+ tortoise.favouriteFood = "dandelion";
+
+
+ console.log(tortoise);
 
 
 
@@ -86,9 +97,10 @@ parrot = null;
  * Q7. What's the combined age of all the pets?
  */
 
-totalPetAge = null;
+totalPetAge = dog.age + cat.age + tortoise.age + parrot.age;
 
-// console.log("The total age of the pets is " + totalPetAge);
+
+ console.log("The total age of the pets is " + totalPetAge);
 
 
 

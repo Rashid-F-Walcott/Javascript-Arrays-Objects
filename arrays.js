@@ -9,7 +9,7 @@ stations = ["Dundee", "Edinburgh", "North Berwick", "Newcastle", "York", "Leeds"
  * The East Coast Main Line doesn't stop at Peterborough! Add London Kings Cross to the end of the array to complete the line.
  */
 
-stations.pop()                               // Removes the last selection (peterborough) from the array
+   // stations.pop()                            // Removes the last selection (peterborough) from the array, wasnt neccessary typo in quetion
 stations.push("London Kings Cross")          // Added Kings Cross
  console.log(stations) ;                     // Displays in Terminal
 
@@ -67,7 +67,7 @@ console.log(stations);
 
  index = stations.indexOf("Leeds");
     stations.splice(index, 1);
-
+                                                // could be done using       stations.splice(4, 1)
 console.log(stations);
 
 
@@ -79,7 +79,7 @@ console.log(stations);
 
  let start = 3;
  let deleteCount = 0;
- stations.splice(start, deleteCount, 'Darlington');
+ stations.splice(start, deleteCount, 'Darlington');               // can be done all on one line , replacing start = 3 and deletecount = 0 and drlington still on the end
 
 
 console.log(stations);
@@ -110,3 +110,5 @@ console.log("Durham is not a stop on this train")
     console.log("Awww.. No Durham Today") 
 }
 
+// can be written using  stoppingAtDurham ? console.log("Yay Durham") : console.log("Awww...")
+//But stopping at Durham would need to be defined prior      eg     stoppingAtDurham = stations.includes("Durham")
